@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://NEITALG.github.io/neitalg/sitemap.xml
+Sitemap: https://NEITALG.github.io/sitemap.xml

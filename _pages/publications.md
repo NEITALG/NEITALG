@@ -1,20 +1,22 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Publications of the NEITALG project, sorted by year.
 nav: true
 nav_order: 3
 ---
 
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
 {% include bib_search.liquid %}
 
 <div class="publications">
 
-{% bibliography %}
+<h2>Publications</h2>
+
+{% bibliography --file papers %}
+
+<h2>Preprints</h2>
+
+{% bibliography --file preprints %}
 
 </div>

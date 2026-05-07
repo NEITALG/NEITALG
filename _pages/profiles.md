@@ -1,7 +1,7 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
+title: People
 description: Members of the NEITALG research team.
 nav: true
 nav_order: 4

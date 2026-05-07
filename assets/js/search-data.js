@@ -394,21 +394,11 @@ ninja.data = [{
             },},{id: "news-placeholder-team-member-name-will-present-at-conference-placeholder-in-city-month-year",
           title: '[Placeholder] Team member [Name] will present at [Conference Placeholder] in [City, Month Year]....',
           description: "",
-          section: "News",},{id: "projects-iterative-algorithms-for-nonlinear-optimization",
-          title: 'Iterative Algorithms for Nonlinear Optimization',
-          description: "Convergence theory and complexity bounds for first- and second-order methods in nonconvex settings.",
+          section: "News",},{id: "projects-consensus-based-optimization",
+          title: 'Consensus-Based optimization',
+          description: "Breaking Nonconvexity",
           section: "Projects",handler: () => {
               window.location.href = "/NEITALG/projects/1_project/";
-            },},{id: "projects-optimal-control-of-nonlinear-evolution-equations",
-          title: 'Optimal Control of Nonlinear Evolution Equations',
-          description: "First-order optimality conditions and numerical methods for control problems governed by PDEs.",
-          section: "Projects",handler: () => {
-              window.location.href = "/NEITALG/projects/2_project/";
-            },},{id: "projects-operator-splitting-and-proximal-methods",
-          title: 'Operator Splitting and Proximal Methods',
-          description: "Analysis and applications of splitting algorithms for composite and constrained optimization.",
-          section: "Projects",handler: () => {
-              window.location.href = "/NEITALG/projects/3_project/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",

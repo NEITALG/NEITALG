@@ -9,7 +9,7 @@ subtitle: >
 
 profile:
   align: right
-  image: prof_pic.jpg # replace with your project logo (e.g., neitalg_logo.jpg)
+  image: Neitalg.png # replace with your project logo (e.g., neitalg_logo.jpg)
   image_circular: false
   more_info: >
     <p>Department of [Placeholder]</p>
@@ -30,10 +30,26 @@ latest_posts:
   limit: 3
 ---
 
-**NEITALG** (Nonlinear Evolutions and Iterative Algorithms: Optimization and Control) is an ERC-funded research project investigating the mathematical foundations of iterative algorithms for nonlinear problems arising in optimization and control theory.
+**NEITALG** (Nonlinear Evolutions and Iterative Algorithms: Optimization and Control) 
 
-The project focuses on developing a rigorous theoretical framework for understanding the convergence behavior of iterative methods in nonlinear settings, with applications to large-scale optimization, optimal control, and inverse problems. We draw on tools from nonlinear functional analysis, dynamical systems, and variational calculus.
+**Breaking nonconvexity in the optimisation of new learnable iterative algorithms**
 
-**Research themes** include: [Placeholder — e.g., gradient flows and descent methods, operator splitting, saddle-point problems, learning-informed algorithms, optimal control of PDEs.]
+One of the key challenges in computational mathematics is solving nonconvex optimisation problems. Although traditional iterative algorithms are central to scientific computing, they are typically confined to finding local optima. The ERC-funded NEITALG project aims to develop new, efficient algorithms that can reliably find global solutions to nonconvex functions, backed by rigorous mathematical guarantees. These could pave the way for scientific breakthroughs in areas such as the development of new drugs through the optimisation of molecular properties and the improvement of materials for solar energy. Another goal of NEITALG is to design interpretable and adaptive algorithms with strong generalisation guarantees, contributing to the development of safer and more trustworthy AI.
 
-This project has received funding from the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (Grant Agreement No. XXXXXXX).
+**Objective**
+
+Objective
+
+Iterative algorithms (IA) stand as the very backbone of scientific computing. Traditional IA rely on convex optimization to guide the search for optima, severely limiting their scope to local solutions. Consequently, nonconvex problems are regarded as the ultimate challenge of global optimization. Solving them with convergence guarantees will lead to numerous scientific discoveries, such as finding new medications through optimization of the properties of molecules or enhancing materials for solar cells to accelerate advances in green technologies.
+The first goal of NEITALG is to design new, efficient, and scalable iterative algorithms that can provably solve relevant nonsmooth nonconvex optimizations. This will allow us to overcome locality barriers and open up an entirely new field in scientific computing.
+Furthermore, parametric IA, which are tailored to training data —making them learnable IA— are currently driving remarkable advances in computing and machine learning. However, most of these systems lack rigorous guarantees of performance or interpretability of results.
+The second goal of NEITALG is to formulate new learnable IA with focus on interpretability and generalization guarantees. This will greatly advance the development of safer and more reliable technologies based on machine learning.
+The key approach to achieve both goals involves the systematic study of the largely unexplored mathematical field connecting iterative algorithms and nonlinear evolutions (NE). NEITALG will
+1. Explore the principles for which the analysis of NE provides insights into the convergence of an IA;
+2. Generate new IA from nonstandard NE to overcome traditional limitations (e.g. locality, lack of interpretability);
+3. Provide mean-field optimal control theories for new learnable IA;
+4. Obtain guarantees for learnable IA on metric spaces;
+5. Develop code and conduct numerical experiments for novel solvers for nonlinear ODE/PDE and new methods for 3D computer vision.
+
+
+This project has received funding from the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (Grant Agreement No. 101198055).

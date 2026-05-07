@@ -2,16 +2,19 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  <strong>Nonlinear Evolutions and Iterative Algorithms: Optimization and Control</strong><br>
+  ERC Starting Grant &mdash; Grant Agreement No. XXXXXXX<br>
+  <a href="https://www.tum.de" target="_blank">Technical University of Munich</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.jpg # replace with your project logo (e.g., neitalg_logo.jpg)
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Department of [Placeholder]</p>
+    <p>Technical University of Munich</p>
+    <p>Munich, Germany</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,13 +25,15 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+**NEITALG** (Nonlinear Evolutions and Iterative Algorithms: Optimization and Control) is an ERC-funded research project investigating the mathematical foundations of iterative algorithms for nonlinear problems arising in optimization and control theory.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+The project focuses on developing a rigorous theoretical framework for understanding the convergence behavior of iterative methods in nonlinear settings, with applications to large-scale optimization, optimal control, and inverse problems. We draw on tools from nonlinear functional analysis, dynamical systems, and variational calculus.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**Research themes** include: [Placeholder — e.g., gradient flows and descent methods, operator splitting, saddle-point problems, learning-informed algorithms, optimal control of PDEs.]
+
+This project has received funding from the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (Grant Agreement No. XXXXXXX).

@@ -24,7 +24,7 @@ ninja.data = [{
             window.location.href = "/NEITALG/publications/";
           },
         },{id: "nav-people",
-          title: "people",
+          title: "People",
           description: "Members of the NEITALG research team.",
           section: "Navigation",
           handler: () => {
@@ -378,12 +378,7 @@ ninja.data = [{
             window.location.href = "/NEITALG/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/NEITALG/books/the_godfather/";
-            },},{id: "news-on-monday-11-0-2026-prof-massimo-fornasier-will-give-a-faumod-lecture-organized-by-the-research-center-for-mathematics-of-data-at-friedrich-alexander-universität-erlangen-nürnberg-the-lecture-is-titled-breaking-nonconvexity-consensus-based-optimization-and-more-details-can-be-found-here",
+      },{id: "news-on-monday-11-0-2026-prof-massimo-fornasier-will-give-a-faumod-lecture-organized-by-the-research-center-for-mathematics-of-data-at-friedrich-alexander-universität-erlangen-nürnberg-the-lecture-is-titled-breaking-nonconvexity-consensus-based-optimization-and-more-details-can-be-found-here",
           title: 'On Monday 11.0.2026 Prof. Massimo Fornasier will give a FAUMod lecture organized by...',
           description: "",
           section: "News",},{id: "projects-consensus-based-optimization",

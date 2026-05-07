@@ -4,20 +4,20 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/NEITALG/";
     },
   },{id: "nav-research",
-          title: "research",
+          title: "Research",
           description: "Research themes and work packages of the NEITALG project.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/NEITALG/research/";
           },
         },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "Publications of the NEITALG project, sorted by year.",
           section: "Navigation",
           handler: () => {
@@ -31,7 +31,7 @@ ninja.data = [{
             window.location.href = "/NEITALG/people/";
           },
         },{id: "nav-news",
-          title: "news",
+          title: "News",
           description: "Latest news and announcements from the NEITALG project.",
           section: "Navigation",
           handler: () => {
@@ -383,16 +383,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/NEITALG/books/the_godfather/";
-            },},{id: "news-placeholder-the-neitalg-project-has-officially-started-we-are-excited-to-begin-our-research-on-nonlinear-evolutions-and-iterative-algorithms",
-          title: '[Placeholder] The NEITALG project has officially started. We are excited to begin our...',
-          description: "",
-          section: "News",},{id: "news-placeholder-new-paper-accepted",
-          title: '[Placeholder] New paper accepted',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/NEITALG/news/announcement_2/";
-            },},{id: "news-placeholder-team-member-name-will-present-at-conference-placeholder-in-city-month-year",
-          title: '[Placeholder] Team member [Name] will present at [Conference Placeholder] in [City, Month Year]....',
+            },},{id: "news-on-monday-11-0-2026-prof-massimo-fornasier-will-give-a-faumod-lecture-organized-by-the-research-center-for-mathematics-of-data-at-friedrich-alexander-universität-erlangen-nürnberg-the-lecture-is-titled-breaking-nonconvexity-consensus-based-optimization-and-more-details-can-be-found-here",
+          title: 'On Monday 11.0.2026 Prof. Massimo Fornasier will give a FAUMod lecture organized by...',
           description: "",
           section: "News",},{id: "projects-consensus-based-optimization",
           title: 'Consensus-Based optimization',

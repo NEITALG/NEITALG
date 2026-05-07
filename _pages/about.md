@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: ERC-funded research program on AI and algorithm design
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>NEITALG Project</p>
+    <p>European Research Council</p>
+    <p>ERC Grant Agreement</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,28 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+# NEITALG: Next-generation Information Technologies through AI and ALGorithms
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+NEITALG is an ERC-funded research program focused on developing cutting-edge AI algorithms and computational methods for next-generation information technologies.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## Research Focus
+
+Our research spans several key areas:
+
+- **Algorithm Design**: Novel algorithms for complex optimization problems
+- **Machine Learning**: Advanced ML techniques for large-scale data processing
+- **Computational Complexity**: Theoretical foundations of efficient computation
+- **AI Applications**: Real-world applications in information technology
+
+## Publications
+
+Our research results are published in top-tier conferences and journals. Browse our [publications](/publications/) to learn more about our work.
+
+## Team
+
+NEITALG brings together leading researchers in computer science, mathematics, and AI from across Europe.
+
+## Funding
+
+This project is funded by the European Research Council (ERC) under Grant Agreement [TBD].
+

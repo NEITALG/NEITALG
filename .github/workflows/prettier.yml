@@ -5,6 +5,10 @@ on:
     branches:
       - master
       - main
+  push:
+    branches:
+      - master
+      - main
 
 jobs:
   check:
@@ -28,14 +32,6 @@ jobs:
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
-      - name: Commit formatting fixes 💾
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit -m "style: fix code formatting with prettier" || echo "No changes to commit"
-          git push
       - name: Upload html diff ⬆️
         id: artifact-upload
         if: ${{ failure() && steps.prettier.conclusion == 'failure' }}

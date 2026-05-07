@@ -8,12 +8,12 @@ nav_order: 4
 
 profiles:
   - align: left
-    image: prof_pic.jpg
-    content: about_placeholder.md
+    image: MF.jpg
+    content: MF.md
     image_circular: false
     more_info: >
       <p>Principal Investigator</p>
-      <p>Department of [Placeholder]</p>
+      <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
   - align: right
     image: prof_pic.jpg

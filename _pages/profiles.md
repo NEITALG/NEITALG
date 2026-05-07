@@ -16,7 +16,6 @@ profiles:
       <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
   - align: right
-    image: prof_pic.jpg
     content: about_placeholder.md
     image_circular: false
     more_info: >
@@ -24,7 +23,6 @@ profiles:
       <p>Department of [Placeholder]</p>
       <p>Technical University of Munich</p>
   - align: left
-    image: prof_pic.jpg
     content: about_placeholder.md
     image_circular: false
     more_info: >

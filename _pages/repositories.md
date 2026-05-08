@@ -15,6 +15,13 @@ _styles: >
     text-decoration: none;
     display: block;
     color: inherit;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  [data-theme="dark"] .repo-card {
+    background: rgba(10, 7, 32, 0.80);
+    border-color: rgba(180, 160, 255, 0.18);
   }
   .repo-card:hover {
     border-color: rgba(128, 128, 128, 0.65);

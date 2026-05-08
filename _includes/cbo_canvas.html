@@ -1,0 +1,144 @@
+<canvas id="cbo-bg" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;"></canvas>
+
+<script>
+(function () {
+  const canvas = document.getElementById('cbo-bg');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+
+  // ── CBO parameters ────────────────────────────────────────────────────────
+  const N      = 60;    // particles
+  const ALPHA  = 50;    // sharpness of consensus weighting
+  const LAMBDA = 1.0;   // drift strength
+  const SIGMA  = 0.4;   // noise level
+  const DT     = 0.025; // time step
+  const STEPS  = 380;   // simulation steps before scatter/reset
+  const D      = 3.5;   // domain: [-D, D]^2
+
+  // Rastrigin function — global min at (0,0), many local minima
+  function f(x, y) {
+    const A = 10;
+    return 2 * A
+      + x * x - A * Math.cos(2 * Math.PI * x)
+      + y * y - A * Math.cos(2 * Math.PI * y);
+  }
+
+  // Box-Muller Gaussian sample
+  function randn() {
+    return Math.sqrt(-2 * Math.log(Math.random() + 1e-12))
+         * Math.cos(2 * Math.PI * Math.random());
+  }
+
+  // Domain → canvas pixel
+  function toX(v) { return (v / D * 0.44 + 0.5) * canvas.width;  }
+  function toY(v) { return (v / D * 0.44 + 0.5) * canvas.height; }
+
+  // ── State ─────────────────────────────────────────────────────────────────
+  let particles = [], step = 0;
+
+  function reset() {
+    particles = Array.from({ length: N }, () => ({
+      x: (Math.random() * 2 - 1) * D,
+      y: (Math.random() * 2 - 1) * D,
+    }));
+    step = 0;
+  }
+
+  function consensus() {
+    const w  = particles.map(p => Math.exp(-ALPHA * f(p.x, p.y)));
+    const ws = w.reduce((a, b) => a + b, 1e-300);
+    return {
+      x: particles.reduce((s, p, i) => s + w[i] * p.x, 0) / ws,
+      y: particles.reduce((s, p, i) => s + w[i] * p.y, 0) / ws,
+    };
+  }
+
+  function advance() {
+    const c = consensus();
+    particles = particles.map(p => {
+      const dx = p.x - c.x, dy = p.y - c.y;
+      const d  = Math.hypot(dx, dy);
+      const sd = SIGMA * d * Math.sqrt(DT);
+      return {
+        x: p.x - LAMBDA * DT * dx + sd * randn(),
+        y: p.y - LAMBDA * DT * dy + sd * randn(),
+      };
+    });
+    if (++step >= STEPS) reset();
+  }
+
+  // ── Rendering ─────────────────────────────────────────────────────────────
+  function isDark() {
+    return document.documentElement.getAttribute('data-theme') === 'dark'
+        || window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  function draw() {
+    const W = canvas.width, H = canvas.height;
+    ctx.clearRect(0, 0, W, H);
+
+    const c    = consensus();
+    const cpx  = toX(c.x), cpy = toY(c.y);
+    const dark = isDark();
+
+    const colParticle  = dark ? 'rgba(110,170,255,0.45)' : 'rgba(30,80,200,0.25)';
+    const colLine      = dark ? 'rgba(110,170,255,0.02)'  : 'rgba(30,80,200,0.02)';
+    const colConsensus = dark ? 'rgba(255,195,55,0.9)'    : 'rgba(210,90,10,0.75)';
+
+    // Faint lines from each particle to the consensus point
+    ctx.strokeStyle = colLine;
+    ctx.lineWidth   = 1;
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.moveTo(toX(p.x), toY(p.y));
+      ctx.lineTo(cpx, cpy);
+      ctx.stroke();
+    });
+
+    // Particles
+    ctx.fillStyle = colParticle;
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(toX(p.x), toY(p.y), 3, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    // Consensus point with glow
+    ctx.shadowBlur  = 14;
+    ctx.shadowColor = colConsensus;
+    ctx.beginPath();
+    ctx.arc(cpx, cpy, 6, 0, Math.PI * 2);
+    ctx.fillStyle = colConsensus;
+    ctx.fill();
+    ctx.shadowBlur = 0;
+  }
+
+  // ── Lifecycle ─────────────────────────────────────────────────────────────
+  function resize() {
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  let timer = null;
+
+  function start() {
+    if (timer) return;
+    timer = setInterval(() => { advance(); advance(); draw(); }, 40); // ~25 fps
+  }
+
+  function stop() {
+    clearInterval(timer);
+    timer = null;
+  }
+
+  document.addEventListener('visibilitychange', () =>
+    document.hidden ? stop() : start()
+  );
+
+  window.addEventListener('resize', resize);
+
+  resize();
+  reset();
+  start();
+})();
+</script>

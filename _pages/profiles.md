@@ -64,7 +64,7 @@ profiles:
       <p>Postdoctoral Researcher</p>
       <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
-  - align: right
+  - align: left
     content: JK.md
     image_circular: false
     more_info: >

@@ -4,7 +4,7 @@ permalink: /people/
 title: People
 description: Members of the NEITALG research team.
 nav: true
-nav_order: 4
+nav_order: 5
 
 profiles:
   - align: left
@@ -16,17 +16,59 @@ profiles:
       <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
   - align: right
-    content: about_placeholder.md
+    content: AS.md
     image_circular: false
     more_info: >
       <p>Postdoctoral Researcher</p>
-      <p>Department of [Placeholder]</p>
+      <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
   - align: left
-    content: about_placeholder.md
+    content: FM.md
+    image_circular: false
+    more_info: >
+      <p>Postdoctoral Researcher</p>
+      <p>TUM School of Computation, Information and Technology</p>
+      <p>Technical University of Munich</p>
+  - align: right
+    content: FC.md
+    image_circular: false
+    more_info: >
+      <p>Postdoctoral Researcher</p>
+      <p>TUM School of Computation, Information and Technology</p>
+      <p>Technical University of Munich</p>
+  - align: left
+    content: VS.md
+    image_circular: false
+    more_info: >
+      <p>Postdoctoral Researcher</p>
+      <p>TUM School of Computation, Information and Technology</p>
+      <p>Technical University of Munich</p>
+  - align: right
+    content: LS.md
+    image_circular: false
+    more_info: >
+      <p>Postdoctoral Researcher</p>
+      <p>TUM School of Computation, Information and Technology</p>
+      <p>Technical University of Munich</p>
+  - align: left
+    content: CF.md
+    image_circular: false
+    more_info: >
+      <p>Postdoctoral Researcher</p>
+      <p>TUM School of Computation, Information and Technology</p>
+      <p>Technical University of Munich</p>
+  - align: right
+    content: TR.md
+    image_circular: false
+    more_info: >
+      <p>Postdoctoral Researcher</p>
+      <p>TUM School of Computation, Information and Technology</p>
+      <p>Technical University of Munich</p>
+  - align: right
+    content: JK.md
     image_circular: false
     more_info: >
       <p>PhD Student</p>
-      <p>Department of [Placeholder]</p>
+      <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
 ---

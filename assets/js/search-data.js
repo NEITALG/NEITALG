@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/NEITALG/research/";
           },
+        },{id: "nav-software",
+          title: "Software",
+          description: "Open-source software developed as part of the NEITALG project.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/NEITALG/software/";
+          },
         },{id: "nav-publications",
           title: "Publications",
           description: "Publications of the NEITALG project, sorted by year.",

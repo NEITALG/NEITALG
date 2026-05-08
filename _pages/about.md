@@ -4,7 +4,7 @@ title: About
 permalink: /
 subtitle: >
   <strong>Nonlinear Evolutions and Iterative Algorithms: Optimization and Control</strong><br>
-  ERC Starting Grant &mdash; Grant Agreement No. 101198055<br>
+  ERC Advanced Grant &mdash; Grant Agreement No. 101198055<br>
   <a href="https://www.tum.de" target="_blank">Technical University of Munich</a>
 
 profile:

@@ -5,6 +5,9 @@ title: Publications
 description: Publications of the NEITALG project, sorted by year.
 nav: true
 nav_order: 4
+_styles: >
+  .container { max-width: 1100px; }
+  h2.bibliography { text-align: left; }
 ---
 
 {% include bib_search.liquid %}

@@ -385,8 +385,8 @@ ninja.data = [{
             window.location.href = "/NEITALG/blog/2015/formatting-and-links/";
           
         },
-      },{id: "news-on-monday-11-05-2026-prof-massimo-fornasier-will-give-a-faumod-lecture-organized-by-the-research-center-for-mathematics-of-data-at-friedrich-alexander-universität-erlangen-nürnberg-the-lecture-is-titled-breaking-nonconvexity-consensus-based-optimization-and-more-details-can-be-found-here",
-          title: 'On Monday 11.05.2026 Prof. Massimo Fornasier will give a FAUMod lecture organized by...',
+      },{id: "news-on-monday-11-0-2026-prof-massimo-fornasier-will-give-a-faumod-lecture-organized-by-the-research-center-for-mathematics-of-data-at-friedrich-alexander-universität-erlangen-nürnberg-the-lecture-is-titled-breaking-nonconvexity-consensus-based-optimization-and-more-details-can-be-found-here",
+          title: 'On Monday 11.0.2026 Prof. Massimo Fornasier will give a FAUMod lecture organized by...',
           description: "",
           section: "News",},{id: "projects-consensus-based-optimization",
           title: 'Consensus-Based optimization',

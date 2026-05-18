@@ -408,21 +408,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%70%6C%61%63%65%68%6F%6C%64%65%72@%74%75%6D.%64%65", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=", "_blank");
-        },
-      },{
-        id: 'social-github',
-        title: 'GitHub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/", "_blank");
+          window.open("mailto:%74%69%6D.%72%6F%69%74%68@%74%75%6D.%64%65", "_blank");
         },
       },{
         id: 'social-rss',

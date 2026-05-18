@@ -1,6 +1,4 @@
 # Social links for the NEITALG project website
 # The socials will be displayed in the order they are defined here
-email: placeholder@tum.de # project contact email
-scholar_userid: # Google Scholar profile ID of PI (leave empty or fill in)
-github_username: # GitHub organization or PI username
+email: tim.roith@tum.de
 rss_icon: true # comment this line to hide the RSS icon

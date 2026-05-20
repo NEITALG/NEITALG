@@ -37,6 +37,7 @@ profiles:
       <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
   - align: left
+    image: VS.jpg
     content: VS.md
     image_circular: false
     more_info: >

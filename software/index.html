@@ -155,7 +155,7 @@
     if (bgDarkMode !== dark) buildBackground(dark);  // rebuild on theme switch
 
     if (bgCache) {
-      ctx.globalAlpha = dark ? 0.40 : 0.22;
+      ctx.globalAlpha = dark ? 0.40 : 0.38;
       ctx.drawImage(bgCache, 0, 0);
       ctx.globalAlpha = 1.0;
     }

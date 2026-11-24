@@ -1,4 +1,4 @@
 **Tim Roith**
 
 [Tim Roith](https://timroith.github.io/) is a substitute professor at the Technical University of Munich (TUM), a member of the [Munich Center for Machine Learning (MCML)](https://mcml.ai/) and of the [COST Action InterCoML](https://www.cost.eu/actions/CA24136/). His research lies at the intersection of mathematical analysis, optimization, and machine learning. He works on consensus-based optimization methods, robustness and stability of neural networks, and learning problems in imaging and inverse problems.
-Previously, he was a postdoctoral researcher in the Computational Imaging Group at Deutsches Elektronen-Synchrotron (DESY). He completed his PhD in mathematics at Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) in 2024, supervised by Martin Burger, and was awarded the Dr.-Klaus-Körper Prize of GAMM for his dissertation.
+Previously, he was a postdoctoral researcher in the Computational Imaging Group at Deutsches Elektronen-Synchrotron (DESY). He completed his PhD in mathematics at Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) in 2024, supervised by Martin Burger.

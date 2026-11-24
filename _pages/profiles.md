@@ -59,6 +59,7 @@ profiles:
       <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
   - align: right
+    image: TR.jpg
     content: TR.md
     image_circular: false
     more_info: >
@@ -66,6 +67,14 @@ profiles:
       <p>TUM School of Computation, Information and Technology</p>
       <p>Technical University of Munich</p>
   - align: left
+    image: GB.jpg
+    content: GB.md
+    image_circular: false
+    more_info: >
+      <p>Postdoctoral Researcher</p>
+      <p>TUM School of Computation, Information and Technology</p>
+      <p>Technical University of Munich</p>
+  - align: right
     content: JK.md
     image_circular: false
     more_info: >

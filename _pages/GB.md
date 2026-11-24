@@ -1,0 +1,4 @@
+**Giacomo Borghi**
+
+[Giacomo Borghi](https://giacomoborghi.github.io/) is a postdoctoral researcher in the group of [Massimo Fornasier](https://www.professoren.tum.de/en/fornasier-massimo) at the Technical University of Munich (TUM), affiliated with the Department of Mathematics and the [Munich Center for Machine Learning (MCML)](https://mcml.ai/). He is a mathematician working at the intersection of numerical analysis, probability, and mathematical physics. His research connects interacting particle systems and partial differential equations, with applications to sampling, optimization, and machine learning.
+Previously, he was a postdoctoral researcher at Heriot-Watt University in the group of Lorenzo Pareschi. He completed his PhD at RWTH Aachen University in February 2024, supervised by Michael Herty and Lorenzo Pareschi.
